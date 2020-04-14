@@ -14,7 +14,7 @@ export class DataService {
     this.allMessage.push(message);
   }
 
-  public getAllMessaged() {
+  public getAllMessages() {
     return this.allMessage;
   }
 }
