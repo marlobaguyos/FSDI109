@@ -15,7 +15,8 @@ export class DataService {
   }
 
   public saveMessage(message) {
-    this.allMessages.push(message);
+    var plain = Object.assign({}, message);
+    this.messageCollection.add(plain);
   }
 
   public getAllMessages() {
