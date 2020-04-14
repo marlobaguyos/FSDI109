@@ -13,6 +13,7 @@ export class Tab1Page {
   getMessages() {
     console.log(this.data.getAllMessages());
     return this.data.getAllMessages();
+    
   }
 
 }

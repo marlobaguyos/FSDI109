@@ -18,8 +18,8 @@ export class Tab2Page {
     this.message.from = this.shared.userName;
     this.message.createdOn = new Date();
     this.data.saveMessage(this.message);
-    
-    console.log('posting', this.message);
+    //clear form
+    this.message = new Message();
   }
 
 }
