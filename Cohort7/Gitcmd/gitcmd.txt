@@ -1,1 +1,8 @@
-git add - save your file that locally.
+git add - save your file that locally
+
+git commit -m "initial commit"
+
+git remote add origin
+
+git push -u origin master
+
