@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class DataService {
 
   allMessage: Observable<Message[]>;
-  messageCollection: AngularFireStoreCollection
+
   constructor() { }
 
   public saveMessage(message) {
