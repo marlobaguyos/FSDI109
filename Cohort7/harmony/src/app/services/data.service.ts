@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Message } from '../models/message';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
-  allMessage: Message[] = [];
-
+  allMessage: Observable<Message[]>;
+  messageCollection: AngularFireStoreCollection
   constructor() { }
 
   public saveMessage(message) {
