@@ -8,8 +8,8 @@
 
 <ion-content [fullscreen]="true">
 
-  <div *ngFor="let message of getMessages">
-    {{message.text}}
+  <div *ngFor="let message of getMessages()">
+    {{message.imageUrl}}
     <hr>
     {{message.from}}
   </div>
