@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Message } from '../models/message';
-import { ShareService } from '../services/share.service';
+import { SharedService } from '../services/shared.service';
 
 @Component({
   selector: 'app-tab2',
@@ -11,12 +11,10 @@ export class Tab2Page {
 
   message: Message = new Message();
 
-  constructor(private share: ShareService)
-
-  constructor() {}
+  constructor( private shared: SharedService ) {}
 
   onPost() {
-    this.message.from = this.share.userName;
+    this.message.from = this.shared.userName;
     this.message.createdOn = new Date();
     console.log('posting', this.message);
   }
