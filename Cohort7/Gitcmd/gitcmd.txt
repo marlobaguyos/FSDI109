@@ -12,3 +12,6 @@ git remote add origin YourURL
 
 git push -u origin master
 
+
+ionic g s /services/data
+
