@@ -8,11 +8,19 @@
 
 <ion-content [fullscreen]="true">
 
-  <div *ngFor="let message of getMessages()">
-    {{message.text}}
-    <hr>
-    {{message.from}}
-    <hr>
-  </div>
+  <ion-card *ngFor="let message of getMessages()">
+
+    <ion-card-content *ngIf="message.imageUrl">
+      <ion-img src="{{message.imageUrl}}" alt="image"></ion-img>
+    </ion-card-content>
+
+    <ion-card-header>
+      <ion-card-subtitle>{{message.text}}</ion-card-subtitle>
+      <ion-card-title>{{message.from}}</ion-card-title>
+    </ion-card-header>
+
+    
+
+  </ion-card>
 
 </ion-content>
