@@ -14,15 +14,15 @@
 
       <ion-item>
         <ion-label position="stacked">Your Message</ion-label>
-        <ion-input></ion-input>
+        <ion-input [(ngModel)]="message.txt" name="text"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label position="stacked">Image URL:</ion-label>
-        <ion-input></ion-input>
+        <ion-input [(ngModel)]="message.imageUrl" name="image"></ion-input>
       </ion-item>
 
-      <ion-button expand="block" color="secondary">Submit</ion-button>
+      <ion-button (click)="onPost()" class="main-button" expand="block" color="secondary">Submit</ion-button>
 
     </ion-card-content>
 
