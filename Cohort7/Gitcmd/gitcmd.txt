@@ -15,3 +15,5 @@ git push -u origin master
 
 ionic g s /services/data
 
+npm i -s firebase angularfire2
+
