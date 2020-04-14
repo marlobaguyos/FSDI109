@@ -22,7 +22,7 @@
         <ion-input [(ngModel)]="message.imageUrl" name="image"></ion-input>
       </ion-item>
 
-      <ion-button (click)="onPost()" class="main-button" expand="block" color="secondary">Submit</ion-button>
+      <ion-button [disabled]="!message.text && !message.imageUrl" (click)="onPost()" class="main-button" expand="block" color="secondary">Submit</ion-button>
 
     </ion-card-content>
 

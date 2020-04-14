@@ -7,7 +7,7 @@ ion-card-content {
 }
 
 ion-card-header {
-  padding-top: 0;
+  padding-top: 5px;
 }
 
 ion-card-title {
@@ -15,13 +15,11 @@ ion-card-title {
   color: #666565;
   text-align: right;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: right;
 }
 
 ion-card-subtitle {
   font-size: 17px;
   color: tomato;
-  text-align: right;
+  text-align: left;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
 }
