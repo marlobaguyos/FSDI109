@@ -39,8 +39,8 @@ export class Tab1Page {
     });
   }
 
-  homework(){
-    var data =[
+  homework() {
+    var data = [
       {
         "_id": "5e935f94b0ecb3f1e7c2188d",
         "isActive": false,
