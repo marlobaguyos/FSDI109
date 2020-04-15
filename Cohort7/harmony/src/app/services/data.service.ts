@@ -16,7 +16,7 @@ export class DataService {
 
   constructor(private fb: AngularFirestore) {
     this.messageCollection = fb.collection<Message>('posts'); // initialize connection app -> firebase
-    this.friendCollection = fb.collection<Friend>('friend'); // initialize connection
+    this.friendCollection = fb.collection<Friend>('friends'); // initialize connection
   }
 
   retrieveMessagesFromDB() {
