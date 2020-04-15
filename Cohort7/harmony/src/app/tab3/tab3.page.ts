@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Friend } from '../models/friend';
 import { SharedService } from '../services/shared.service';
 import { DataService } from '../services/data.service';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-tab3',
@@ -14,7 +15,16 @@ export class Tab3Page {
   myFriends: Friend[] = [];
 
   constructor(private shared: SharedService, private data: DataService) {
-    this.data.getAllFriends().subscribe(list => {this.myFriends = list;
+    this.data.getAllFriends().subscribe(list => {
+      // NOTE: the list contains all the friend in the DB, not only mine
+      // this.myFriends = list;
+      this.myFriends = [];
+      for(let i = 0; i < list.length; i++) {
+        var f = list[i];
+        if(f.belongsTo == this.shared.userName){
+          this.myFriends.push(f);
+        }
+      }
     });
   }
 
