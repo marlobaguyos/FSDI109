@@ -13,6 +13,10 @@ export class Tab1Page {
 
   displayMessage: Message[];
 
+  constructor(private data: DataService, private shared: SharedService) {
+    
+  }
+
   // constructor(private data: DataService, private shared: SharedService) {
   //   this.homework();
   //   data.getAllMessages().subscribe(list => {
