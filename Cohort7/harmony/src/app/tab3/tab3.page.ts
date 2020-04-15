@@ -11,8 +11,12 @@ import { DataService } from '../services/data.service';
 export class Tab3Page {
 
   friend: Friend = new Friend();
+  myFriends: Friend[] = [];
 
-  constructor(private shared: SharedService, private data: DataService) {}
+  constructor(private shared: SharedService, private data: DataService) {
+    this.data.getAllFriends().subscribe(list => {this.myFriends = list;
+    });
+  }
 
   onSave() {
     this.friend.belongsTo = this.shared.userName;
