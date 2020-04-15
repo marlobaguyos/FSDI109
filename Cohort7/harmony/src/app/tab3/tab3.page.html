@@ -1,41 +1,43 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="tertiary">
-    <ion-title>
-      Friends
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
+  <ion-header [translucent]="true">
+    <ion-toolbar color="tertiary">
+      <ion-title>
+        Friends
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-  <ion-card>
 
-    <ion-card-content>
+  <ion-content [fullscreen]="true">
+    <ion-card>
 
-      <ion-item>
-        <ion-label position="stacked">Add Friend</ion-label>
-        <ion-input [(ngModel)]="friend.name" name="friendName"></ion-input>
-      </ion-item>
+      <ion-card-content>
 
-      <ion-button (click)="onSave()" class="main-button" expand="block" color="secondary">Submit</ion-button>
-
-    </ion-card-content>
-
-  </ion-card>
-
-  <!-- List -->
-
-  <ion-card>
-
-    <ion-card-content>
-
-      <ion-list>
-        <ion-item *ngFor="let friend of myFriends">
-          <ion-icon name="person-outline"></ion-icon>{{friend.name}}
+        <ion-item>
+          <ion-label position="stacked">Add Friend</ion-label>
+          <ion-input [(ngModel)]="friend.name" name="friendName"></ion-input>
         </ion-item>
-      </ion-list>
 
-    </ion-card-content>
-  </ion-card>
+        <ion-button (click)="onSave()" class="main-button" expand="block" color="secondary">Submit</ion-button>
 
-</ion-content>
+      </ion-card-content>
+
+    </ion-card>
+
+    <!-- List -->
+
+    <ion-card>
+
+      <ion-card-content>
+
+        <ion-list>
+          <ion-item *ngFor="let friend of myFriends">
+            <ion-icon name="person-outline"></ion-icon>{{friend.name}}
+          </ion-item>
+        </ion-list>
+
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+
+  
