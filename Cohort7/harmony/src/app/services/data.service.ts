@@ -14,6 +14,10 @@ export class DataService {
     this.messageCollection = fb.collection<Message>('posts'); //initialize connection app -> firebase
   }
 
+  retrieveMessagesFromDB() {
+    this.allMessages = this.messageCollection.valueChanges();
+  }
+
   public saveMessage(message) {
     var plain = Object.assign({}, message);
     this.messageCollection.add(plain);
