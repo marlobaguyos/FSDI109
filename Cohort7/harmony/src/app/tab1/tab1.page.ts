@@ -14,9 +14,12 @@ export class Tab1Page {
   displayMessage: Message[];
 
   constructor(private data: DataService, private shared: SharedService) {
-    
+    data.getAllMessages().subscribe(list => {
+      console.log('obs emited value');
+      this.displayMessage = list;
+    });
   }
-
+}
   // constructor(private data: DataService, private shared: SharedService) {
   //   this.homework();
   //   data.getAllMessages().subscribe(list => {
@@ -139,4 +142,3 @@ export class Tab1Page {
 
   // solve1(data){
   //   // your code here to:  1 - Sort items by Age Desc
-  }
