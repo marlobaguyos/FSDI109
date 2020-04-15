@@ -14,7 +14,7 @@
 
       <ion-item>
         <ion-label position="stacked">Add Friend</ion-label>
-        <ion-input name="friendName"></ion-input>
+        <ion-input [(ngModel)]="friend.name" name="friendName"></ion-input>
       </ion-item>
 
       <ion-button (click)="onSave()" class="main-button" expand="block" color="secondary">Submit</ion-button>
