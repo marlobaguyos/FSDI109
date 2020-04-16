@@ -1,24 +1,24 @@
 
-  <ion-header [translucent]="true">
-    <ion-toolbar color="tertiary">
-      <ion-title>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title color="secondary">
         Friends
       </ion-title>
     </ion-toolbar>
   </ion-header>
 
 
-  <ion-content class="pogi" [fullscreen]="true">
+  <ion-content class="pogi">
     <ion-card>
 
-      <ion-card-content>
+      <ion-card-content class="cardContent">
 
-        <ion-item>
+        <ion-item class="tab3Items">
           <ion-label position="stacked">Add Friend</ion-label>
           <ion-input [(ngModel)]="friend.name" name="friendName"></ion-input>
         </ion-item>
 
-        <ion-button (click)="onSave()" class="main-button" expand="block" color="secondary">Submit</ion-button>
+        <ion-button (click)="onSave()" class="main-button" expand="block" color="primary">Submit</ion-button>
 
       </ion-card-content>
 
