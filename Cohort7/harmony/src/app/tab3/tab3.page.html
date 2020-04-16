@@ -13,12 +13,12 @@
 
       <ion-card-content class="cardContent">
 
-        <ion-item class="tab3Items">
-          <ion-label position="stacked">Add Friend</ion-label>
+        <ion-item>
+          <ion-label class="label" position="stacked">Add Friend</ion-label>
           <ion-input [(ngModel)]="friend.name" name="friendName"></ion-input>
         </ion-item>
 
-        <ion-button (click)="onSave()" class="main-button" expand="block" color="primary">Submit</ion-button>
+        <ion-button (click)="onSave()" class="main-button" expand="full">Submit</ion-button>
 
       </ion-card-content>
 

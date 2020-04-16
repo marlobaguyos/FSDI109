@@ -2,22 +2,24 @@ ion-content ion-toolbar {
   --background: translucent;
 }
 
+ion-card {
+  --background: #ebe65e;
+}
+
+ion-item {
+  --background: #ebe65e;
+}
+
+.label {
+  font-size: 14px;
+  color: #141413;
+  font-family: 'Roboto', sans-serif;
+}
+
 .main-button{
   --background: #141413;
   font-size: 18px;
   color: #ebe65e;
   font-family: 'Roboto', sans-serif;
-  margin-top: 2%;
-  margin-left: 21.5px;
-  
-}
-
-.tab3Items {
-  margin-left: 0px;
-  padding-left: 0px;
-}
-
-.cardContent {
-  margin: 0;
-  padding-left: 0;
+  margin-top: 8%;
 }
