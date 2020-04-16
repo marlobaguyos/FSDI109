@@ -24,3 +24,31 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.pogi {
+  // --ion-background-color: #ebe65e;
+  // background-image: url('../../images/Original\ on\ Transparent.png');
+  --background: none;
+  background-image: url('../../images/Original.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #ABABAB;
+}
+
+ion-header {
+  --ion-background-color: black;
+}
+
+// ion-card {
+// --ion-background-color: #ebe65e;
+// }
+
+// ion-header ion-toolbar {
+//   --ion-background-color: #ebe65e;
+// }
+
+// .globalDiv {
+//   --ion-background-color: #ebe65e;
+// }
+

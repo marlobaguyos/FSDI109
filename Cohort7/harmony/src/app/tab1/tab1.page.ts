@@ -123,6 +123,7 @@ export class Tab1Page {
         "gender": "male"
       }
     ]
+    
     console.log(data);
     // 1 - Sort items by Age Desc
     this.solve1(data);

@@ -12,14 +12,30 @@ ion-card-header {
 
 ion-card-title {
   font-size: 16px;
-  color: #666565;
+  color: #ababab;
   text-align: right;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ion-card-subtitle {
   font-size: 17px;
-  color: tomato;
+  color: #141413;
   text-align: left;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+span {
+  font-size: 16px;
+  color: #141413;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ion-card {
+  --ion-background-color: #ebe65e;
+}
+
+// .title {
+//   color: #EBE65E;
+// }
+

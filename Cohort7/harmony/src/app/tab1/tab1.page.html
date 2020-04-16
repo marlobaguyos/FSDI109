@@ -1,26 +1,27 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
-    <ion-title class="">
+    <ion-title class="title" color="secondary">
       Feed
     </ion-title>
   </ion-toolbar>
 </ion-header>
+  
+<ion-content class="pogi">
+  
+    <ion-card *ngFor="let message of displayMessage">
 
-<ion-content [fullscreen]="true">
+      <ion-card-content *ngIf="message.imageUrl">
+        <ion-img src="{{message.imageUrl}}"></ion-img>
+      </ion-card-content>
 
-  <ion-card *ngFor="let message of displayMessage">
+      <ion-card-header>
+        <ion-card-subtitle>{{message.text}}</ion-card-subtitle>
+        <span class='date'>{{message.createdOn | date:'MM/dd/yyyy hh:mm'}}</span>
+        <ion-card-title>{{message.from}}</ion-card-title>
+      </ion-card-header>
 
-    <ion-card-content *ngIf="message.imageUrl">
-      <ion-img src="{{message.imageUrl}}"></ion-img>
-    </ion-card-content>
-
-    <ion-card-header>
-      <ion-card-subtitle>{{message.text}}</ion-card-subtitle>
-      <ion-card-title>{{message.from}}</ion-card-title>
-      <span class='date'>{{message.createdOn | date:'MM/dd/yyyy hh:mm'}}</span>
-    </ion-card-header>
-
-  </ion-card>
-
+    </ion-card>
 </ion-content>
+
+
 
