@@ -1,7 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 ion-content ion-toolbar {
   --background: translucent;
 }
 
+ion-item {
+  --background: #ebe65e;
+}
+
 .main-button{
-  margin-top: 25px;
+  margin: 0;
+  --background: #141413;
+  font-size: 18px;
+  color: #ebe65e;
+  font-family: 'Roboto', sans-serif;
+}
+
+.label {
+  font-size: 14px;
+  color: #141413;
+  font-family: 'Roboto', sans-serif;
 }

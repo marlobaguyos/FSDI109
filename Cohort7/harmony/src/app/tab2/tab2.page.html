@@ -1,31 +1,26 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="secondary">
-    <ion-title>
-      Post Message
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title color="secondary">
+      Chat
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="pogi" [fullscreen]="true">
-  
-  <ion-card>
-
-    <ion-card-content>
-
+<ion-content class="pogi">
       <ion-item>
-        <ion-label position="stacked">Your Message</ion-label>
-        <ion-input [(ngModel)]="message.text" name="text"></ion-input>
+        <ion-label  class="label" position="stacked">Your Message:</ion-label>
+        <ion-textarea [(ngModel)]="message.text" name="text"></ion-textarea>
       </ion-item>
-
+  
       <ion-item>
-        <ion-label position="stacked">Image URL:</ion-label>
+        <ion-label class="label" position="stacked">Image URL:</ion-label>
         <ion-input [(ngModel)]="message.imageUrl" name="image"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label position="stacked">To:</ion-label>
+        <ion-label class="label" position="stacked">To:</ion-label>
         <ion-select [(ngModel)]="message.to" name="to">
-          <ion-select-option value="General">General</ion-select-option>
+          <ion-select-option value="General" class="label" >General</ion-select-option>
 
           <ion-select-option *ngFor="let friend of myFriends" [value]="friend.name">
             {{friend.name}}
@@ -33,10 +28,7 @@
         </ion-select>
       </ion-item>
 
-      <ion-button [disabled]="!message.text && !message.imageUrl" (click)="onPost()" class="main-button" expand="block" color="secondary">Submit</ion-button>
+      <ion-button [disabled]="!message.text && !message.imageUrl" (click)="onPost()" class="main-button" expand="full">Submit</ion-button>
 
-    </ion-card-content>
-
-  </ion-card>
 
 </ion-content>
